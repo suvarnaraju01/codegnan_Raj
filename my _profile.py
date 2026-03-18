@@ -1,0 +1,7 @@
+print("im  raju")
+print("im from  vizag")
+print("i have completed MCA")
+print("im a python developer")
+print("im  raju")
+print("im  raju")
+        
