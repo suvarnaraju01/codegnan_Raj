@@ -23,7 +23,7 @@ so = {4,5,6}
 print(a.union(so))
 #2. intersection - find the common  element from 2 sets
 print(a.intersection(so))
-#3.difference - common ga leni elements ni print cheztundhi
+#3.difference - common ga leni elements ni print chestundhi
 print(a.difference(so))
 #4.remove - remove element from dataset
 a.remove(3)
