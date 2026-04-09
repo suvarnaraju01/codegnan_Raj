@@ -30,13 +30,28 @@ prime_check(prime_num = 9,count = 0)
 prime_check(prime_num = 11,count = 0)
 prime_check(prime_num = 13,count = 0)#key word arguments - as like dictionary here we have key and values directly in the arguments
 '''
-#Ex - 2
+'''#Ex - 2
 def raj(b,c,a):
     print(f"a={a},b={b},c={c}" )
-raj(a=2,b=3,c=4)#even thou places of arguments and parameters are diff ,values of variable are same so no problem 
+raj(a=2,b=3,c=4)#even thou places of arguments and parameters are diff ,values of variable are same so no problem '''
 
+'''#count of words in sentence
+def word_count(sentence ):
+    words = sentence.split()
+    count = len(words)
+    print("Number of words:", count)
+word_count(sentence = input("Enter a sentence: "))'''
 
-variable length argument:
+'''variable length argument:
 ----------------------------------
-addinga star (*) before the parameters name in the function ,recive a tuple of arguments and can acess items with indexs
-
+addinga star (*) before the parameters name in the function ,recive a tuple of arguments and can acess items with indexs'''
+P=int(input("enter principle value"))
+R=float(input("enter  rate of intrest value"))
+T=float(input("enter time period"))
+A= " "
+CI=" "
+def compound_intrest(A,CI):
+    A=P(1+R/100)^T
+    CI=A-P
+    print("compound intrest is" ,CI)
+compound_intrest(A, CI )
