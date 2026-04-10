@@ -20,6 +20,8 @@ if len(user_pin) == 4:
              else:
                 print(f"{Deposite_M} you have entered  is change or less than 5000/-")
         elif user_choice == 3:
+            Attempts_remaining = 3
+            while Attempts_remaining > 0 :
             old_pin = input("Enter old pin again: ")
             if old_pin == SBI_RAJ["ATM PIN"]:
                 new_pin = input("Enter new pin: ")

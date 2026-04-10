@@ -1,6 +1,8 @@
 '''
-lambda funtion: Also called anonymous function.
-it can take  n number of arguments but have only one expression
+Lambda Funtion:
+-----------------------
+        Also called anonymous function.
+        it can take  n number of arguments but have only one expression
 syntax:
          lambda (keyword) arguments : expression
 
@@ -14,8 +16,8 @@ print(any(int(input("enter first number ")),int(input("enter first number ")),in
 
 List Comprehension:
 ---------------------------
-This offers the shorter syntax when you want to create a new list from existing list.
-Syntax:
+    This offers the shorter syntax when you want to create a new list from existing list.
+    Syntax:
              variable_name = [expression loop and condition]
 '''
 raj=[1,2,3,4,5]
