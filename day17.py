@@ -51,8 +51,7 @@ def is_even(s):
         print("not even number")
 is_even(even)
 
-
-
+#vowels and consonents
 def vowels_consonents(raj,vowels_list,consonents_list ):
     for j in raj :
         if j in "AEIOUaeiou":
