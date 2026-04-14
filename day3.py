@@ -100,14 +100,13 @@ print(not vote_right)
 '''
 #identify operators--> they check the memory location and validate  we used
 #(id) function it is different from == operator->  is , is not
-
-a=[1,2,4]
+'''Raj=[1,2,4]
 b=[1,2,4]
 print(a==b)
-print(id(a))
+print(id(Raj))
 print(id(b))
-print(a is b)
-print(a is not b)
+print(Raj is b)
+print(Raj is not b)
 
 #bitwise -->bitwise     AND  & , OR | perform bitwise  operator
 #we get the result ( remember the  binary conversation)
@@ -117,5 +116,7 @@ print(bin(5))# bin  return binary number
 #Task --> Now you have all operators create a Checker Task
 #git add .
 #git commit -m"operators usage"
-#git push -u origin main 
+#git push -u origin main'''
+ansh=5
+print(ansh*3)
 
