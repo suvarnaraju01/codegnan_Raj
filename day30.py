@@ -124,7 +124,7 @@ today = datetime.datetime.today( )
 print(today.strftime("%d-%m-%Y"))
 print(today.strftime("%H-%M-%S,%p"))
 print(today.strftime("%A"))
-print(today.strftime("%B"))'''
+print(today.strftime("%B"))
 
 import re
 
@@ -161,7 +161,71 @@ print("\n--- User Details ---")
 print("Name:", name)
 print("Phone:", phno)
 print("Email:", email)
-print("Password set successfully!")
+print("Password set successfully!") '''
 
+'''import re
+
+# Input
+name = input("Enter your name: ")
+
+# Phone number validation (exactly 10 digits)
+while True:
+    phno = input("Enter phone number: ")
+    if re.search(r"^\d{10}$", phno):
+        break
+    else:
+        print("Invalid phone number! Must be exactly 10 digits.")
+
+# Email validation (@gmail.com ending)
+while True:
+    email = input("Enter email id: ")
+    if re.search(r"@gmail\.com$", email):
+        break
+    else:
+        print("Invalid email! Must end with @gmail.com")
+
+# Password validation
+password = input("Set password: ")
+confirm_password = input("Confirm password: ")
+
+while password != confirm_password:
+    print("Passwords do not match! Try again.")
+    password = input("Set password: ")
+    confirm_password = input("Confirm password: ")
+
+# Output
+print("\n--- User Details ---")
+print("Name:", name)
+print("Phone:", phno)
+print("Email:", email)
+print("Password set successfully!")'''
+
+import re
+def validate_name(name):
+    pattern = r'^[A-Za-z]{3,}$'
+    return re.fullmatch(pattern,name)
+
+def validate_email(email):
+    pattern = r'^[\w\.-]+
+    return re.fullmatch(pattern,email)
+
+def validate_phno(phone number):
+    pattern = 
+    return re.fullmatch(pattern,phone number)
+
+def validate_password(email):
+    pattern = 
+    return re.fullmatch(pattern,password)
+def main( ):
+    name = input("enter name")
+    email = input("enter email")
+    phone number = input("enter phonenumber")
+    password = input("enter password")
+    
+
+
+
+ if not validate_name(name):
+     print("invalid Name")
 
 
