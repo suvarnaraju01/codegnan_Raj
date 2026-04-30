@@ -33,11 +33,66 @@ print(arr - 1)
 
 Pandas :
 ----------
- used for handling structured  data in table format'''
+ used for handling structured  data in table format
 
 
 import pandas as pd
 data = {"S.No":[1,2],"Name" : ["Raju","SarathLaxmi"],"marks":[99,99.9]}
 any = pd.DataFrame(data)
 print(any)
+
+import matplotlib.pyplot as plt
+
+plt.subplot(2,2,1)
+plt.title("Very Long Title Example 1")
+
+plt.subplot(2,2,2)
+plt.title("Very Long Title Example 2")
+
+plt.subplot(2,2,3)
+plt.title("Very Long Title Example 3")
+
+plt.subplot(2,2,4)
+plt.title("Very Long Title Example 4")
+
+# Uncomment this to fix overlap
+plt.tight_layout()
+
+plt.show()'''
+import matplotlib.pyplot as plt
+
+# Data
+weeks = [1, 2, 3, 4, 5]
+marks = [9, 9, 5, 11, 4]
+
+# 1. Line Plot
+plt.subplot(2,3,1)
+plt.plot(weeks, marks, marker='o')
+plt.title("Line Plot")
+
+# 2. Bar Graph
+plt.subplot(2,3,2)
+plt.bar(weeks, marks)
+plt.title("Bar Graph")
+
+# 3. Pie Chart
+plt.subplot(2,3,3)
+plt.pie(marks, labels=weeks, autopct='%1.1f%%')
+plt.title("Pie Chart")
+
+# 4. Scatter Plot
+plt.subplot(2,3,4)
+plt.scatter(weeks, marks)
+plt.title("Scatter Plot")
+
+# 5. Histogram
+plt.subplot(2,3,5)
+plt.hist(marks)
+plt.title("Histogram")
+
+# Layout fix
+plt.tight_layout()
+
+# Show all graphs
+plt.show()
     
